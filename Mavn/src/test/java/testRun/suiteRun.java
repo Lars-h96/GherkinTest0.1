@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features="src/test/resources/features",
         glue = {"stepDefinitions"},
-        plugin ={"progress", "json:target/reports/Regression.json"} )
+        plugin ={"pretty", "json:target/reports/jsonReports/Regression.json",
+                "junit:target/reports/junitReports/Regression.xml",
+                "html:target/reports/htmlReports/Regression.html"} )
 
 public class suiteRun {
 }
