@@ -19,8 +19,12 @@
 
         <version.cucumber>7.4.1</version.cucumber>
         <version.junit>4.13.2</version.junit>
+        <version.lombok>1.18.24</version.lombok>
         <version.selenium>4.3.0</version.selenium>
         <version.springboot>2.7.1</version.springboot>
+        <version.webdrivermanager>4.3.1</version.webdrivermanager>
+
+        <version.webdriverextensions-maven-plugin>3.3.0</version.webdriverextensions-maven-plugin>
     </properties>
 
     <name>TestProject</name>
@@ -49,7 +53,12 @@
             <artifactId>junit</artifactId>
             <version>${version.junit}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${version.lombok}</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -66,8 +75,22 @@
             <artifactId>spring-boot-starter</artifactId>
             <version>${version.springboot}</version>
         </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${version.webdrivermanager}</version>
+        </dependency>
     </dependencies>
 
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>com.github.webdriverextensions</groupId>
+            <artifactId>webdriverextensions-maven-plugin</artifactId>
+            <version>${version.webdriverextensions-maven-plugin}</version>
+        </plugin>
+    </plugins>
+    </build>
 
 
 </project>

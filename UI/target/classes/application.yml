@@ -1,0 +1,11 @@
+### Tip, when you want to run Firefox headless, use spring.profiles.active: firefox,headless
+### Tip2, when you want to run Firefox but not set the yml, you can also use the overwrite from commandline
+spring.profiles.active: test
+## Include environment profiles and urls, plus the UI settings
+spring.profiles.include: urls,ui
+
+# On UI Testing
+browserUnderTest: chrome
+
+# Show logs on each message
+messageLogging: true

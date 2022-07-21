@@ -1,0 +1,41 @@
+# UI Settings
+ui:
+  headless: false
+  maximize: true
+  # Maximize overrules below settings
+#  windowsize-x: 1920
+#  windowsize-y: 1080
+
+# Browser settings
+browsers:
+  chrome:
+    arguments:
+      - "disable-infobars"
+      - "--disable-extensions"
+      - "--ignore-certificate-errors"
+  firefox:
+    preferences:
+      dom.disable_beforeunload: true
+      network.dns.get-ttl: false
+      intl.accept_languages: nl
+
+#'Run headless' profile only
+---
+spring.profiles: headless
+ui:
+  headless: true
+  maximize: false
+  windowsize-x: 1920
+  windowsize-y: 1080
+
+############### BROWSER PROFILES
+#'Browser Chrome' profile only
+---
+spring.profiles: chrome
+browserUnderTest: chrome
+
+#'Browser Firefox' profile only
+---
+spring.profiles: firefox
+browserUnderTest: firefox
+

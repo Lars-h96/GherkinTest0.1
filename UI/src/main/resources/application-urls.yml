@@ -1,0 +1,18 @@
+# Default
+url: https://www.saucedemo.com/
+### In the profiles definition you can set the url of your environment or overwrite any default value.
+### Copy paste an existing profile and edit to your needs
+
+############### ENVIRONMENT PROFILES
+#'K8S' profile only
+---
+spring.profiles: test
+spring.profiles.include: data
+url: https://www.saucedemo.com/
+#'Local' profile only
+---
+spring.profiles: local
+spring.profiles.include: data
+url: https://localhost
+ddmUrl: http://localhost
+

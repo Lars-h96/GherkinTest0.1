@@ -1,0 +1,19 @@
+## DEFAULT SETTINGS
+datafolder: data
+
+# Cucumber Test Data
+testdata:
+
+  accounts:
+    standardUser:
+      id: standard_user
+      pw: secret_sauce
+    lockedUser:
+      id: locked_out_user
+      pw: secret_sauce
+    problemUser:
+      id: problem_user
+      pw: secret_sauce
+    glitchUser:
+      id: performance_glitch_user
+      pw: secret_sauce
