@@ -1,12 +1,12 @@
-package stepDefinitions;
+package test.ui.stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import stepDefinitions.common.BaseSteps;
+import test.ui.stepDefinitions.common.BaseUiSteps;
 
-public class loginSteps extends BaseSteps {
+public class loginSteps extends BaseUiSteps {
     @Given("user is on the login page")
     public void userIsOnTheLoginPage() {
     }
