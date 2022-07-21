@@ -11,4 +11,16 @@
 
     <artifactId>UI</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>suite.test</groupId>
+            <artifactId>Cucumber</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>suite.test</groupId>
+            <artifactId>Framework</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

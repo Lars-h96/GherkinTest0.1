@@ -3,20 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>suite.test</groupId>
         <artifactId>suite</artifactId>
+        <groupId>suite.test</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Cucumber</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>suite.test</groupId>
-            <artifactId>Framework</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
+    <artifactId>Framework</artifactId>
 
 </project>
