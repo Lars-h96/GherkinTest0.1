@@ -11,6 +11,7 @@
     <modules>
         <module>Cucumber</module>
         <module>UI</module>
+        <module>Framework</module>
     </modules>
 
     <properties>
